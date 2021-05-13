@@ -14,7 +14,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String TABLE5 = "reino";
     private static final String TABLE6 = "flor";
 
-    DatabaseHelper(Context context){
+
+
+    public DatabaseHelper(Context context, String DATABASE_NAME, SQLiteDatabase.CursorFactory factory, int version ){
         super(context, DATABASE_NAME, factory, version);
     }
 
