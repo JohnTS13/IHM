@@ -17,6 +17,7 @@ import com.example.ihm.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = findViewById(R.id.fab);
+
+        //dataBase creations
+
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
