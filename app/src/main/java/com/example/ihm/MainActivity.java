@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
 
         //dataBase creations
-
+        DatabaseHelper conn = new DatabaseHelper(this, "chavas_database", null, 1);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
