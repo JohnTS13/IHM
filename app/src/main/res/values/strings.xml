@@ -4,4 +4,14 @@
     <string name="tab_text_2">Tab 2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- General -->
+    <string name="titulo_general">General</string>
+    <string name="separador">__________________</string>
+    <string name="general_Temperatura">Temperatura</string>
+    <string name="general_Humedad">Humedad</string>
+    <string name="estado_planta">Estado de tus plantas</string>
+    <!-- Configuraciones -->
+    <string name="titulo_configuraciones">Configuraciones</string>
+    <string name="instrucciones_configuraciones">Indique las configuraciones del invernadero</string>
+
 </resources>
