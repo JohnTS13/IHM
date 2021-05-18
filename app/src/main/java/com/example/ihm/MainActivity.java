@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     //prueba de despliegue
     private RecyclerView recyclerViewFlor;
     private RecyclerviewAdaptador adaptadorFlor;
-
+    //hola
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
