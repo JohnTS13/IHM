@@ -1,4 +1,4 @@
-package com.example.ihm;
+/*package com.example.ihm;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -94,11 +94,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }else {
             return false;
         }
-    }*/
+    }
 
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM flor", null);
         return  cursor;
     }
-}
+}*/

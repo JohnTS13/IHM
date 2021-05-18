@@ -26,22 +26,26 @@
         android:paddingRight="45sp"
         android:src="@drawable/separador" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/insert_plants"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingLeft="120sp"
-        android:paddingRight="50sp">
+        android:layout_height="wrap_content"
+        android:paddingLeft="45sp"
+        android:paddingRight="45sp"
+        android:text="Agregar plantas" />
 
-        <Button
-            android:id="@+id/insert_plants"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="Agregar plantas" />
-
-    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPlantas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
 </LinearLayout>

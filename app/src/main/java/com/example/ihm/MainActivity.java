@@ -4,13 +4,16 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.ihm.Controlador.PagerController;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,10 +24,20 @@ public class MainActivity extends AppCompatActivity {
 
     private Button insert, update, delete, view;
 
+    //prueba de despliegue
+    private RecyclerView recyclerViewFlor;
+    private RecyclerviewAdaptador adaptadorFlor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //prueba de despliegue
+        recyclerViewFlor = (RecyclerView)findViewById(R.id.recyclerPlantas);
+        recyclerViewFlor.setLayoutManager(new LinearLayoutManager(this));
+        adaptadorFlor = new RecyclerviewAdaptador(obtenerFlor());
+        recyclerViewFlor.setAdapter(adaptadorFlor);
 
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
@@ -46,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
         update = findViewById(R.id.);
         delete = findViewById(R.id.);
         view = findViewById(R.id.);
-        */
-        DatabaseHelper db = new DatabaseHelper(this,"chavas_garden", null,1);
 
+        DatabaseHelper db = new DatabaseHelper(this,"chavas_garden", null,1);
+        */
         pagerAdapter = new PagerController(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -79,5 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
+    }
+
+    public List<flor_planta> obtenerFlor() {
+        List<flor_planta> flor_array = new ArrayList<>();
+        flor_array.add(new flor_planta("Margarita", "17°", "29", "Asteráceas", "Plantae", "Brotando", R.drawable.brotando));
+        flor_array.add(new flor_planta("Rosa polyantha", "26°", "34", "Rosaceae", "Plantae", "En crecimiento", R.drawable.en_crecimiento));
+        return  flor_array;
     }
 }
