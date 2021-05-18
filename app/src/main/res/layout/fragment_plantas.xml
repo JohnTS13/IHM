@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controlador.Plantas">
+    tools:context=".Controlador.Plantas"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/txtTituloPlantas4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="12sp"
         android:text="Plantas"
-        android:textSize="20sp"
-        android:gravity="center"/>/>
+        android:textColor="@color/purple_200"
+        android:textSize="40sp" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45sp"
+        android:paddingRight="45sp"
+        android:src="@drawable/separador" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="120sp"
+        android:paddingRight="50sp">
+
+        <Button
+            android:id="@+id/button2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="Agregar plantas" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="120sp"
+        android:paddingRight="50sp">
+
+        <Button
+            android:id="@+id/button3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="Margatira" />
+    </LinearLayout>
+
+</LinearLayout>
