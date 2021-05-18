@@ -1,4 +1,4 @@
-/*package com.example.ihm;
+package com.example.ihm;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+/*public class DatabaseHelper extends SQLiteOpenHelper {
     //Initialize Variable
     private static final String DATABASE_NAME = "chavas_garden";
     private static final String TABLE1 = "flor";
@@ -94,11 +94,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }else {
             return false;
         }
-    }
+    }*/
 
-    public Cursor getData(){
+/*    public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM flor", null);
         return  cursor;
     }
-}*/
+}
+*/

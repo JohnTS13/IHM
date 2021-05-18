@@ -16,7 +16,8 @@
         android:textSize="40sp"
         android:gravity="center"
         android:textColor="@color/purple_200"
-        android:paddingTop="12sp"/>
+        android:paddingTop="12sp"
+        android:fontFamily="@font/footlight_mt_light"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -40,7 +41,9 @@
             android:layout_weight="1"
             android:text="@string/general_Temperatura"
             android:paddingLeft="40sp"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:paddingRight="40sp"
+            android:fontFamily="@font/footlight_mt_light"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -50,7 +53,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:fontFamily="@font/footlight_mt_light"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,8 +68,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/general_Humedad"
-            android:paddingLeft="66sp"
-            android:textSize="20sp"/>
+            android:paddingLeft="67sp"
+            android:textSize="20sp"
+            android:paddingRight="40sp"
+            android:fontFamily="@font/footlight_mt_light"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
@@ -73,9 +79,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:fontFamily="@font/footlight_mt_light"
             android:inputType="textPersonName"
             android:text=""
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
@@ -87,7 +94,8 @@
         android:gravity="center"
         android:textColor="@color/purple_200"
         android:paddingTop="12sp"
-        android:paddingVertical="10sp"/>
+        android:paddingVertical="10sp"
+        android:fontFamily="@font/footlight_mt_light"/>
 
     <TableLayout
         android:layout_width="match_parent"

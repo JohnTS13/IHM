@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //prueba de despliegue
-        recyclerViewFlor = (RecyclerView)findViewById(R.id.recyclerPlantas);
+        /*recyclerViewFlor = (RecyclerView)findViewById(R.id.recyclerPlantas);
         recyclerViewFlor.setLayoutManager(new LinearLayoutManager(this));
         adaptadorFlor = new RecyclerviewAdaptador(obtenerFlor());
-        recyclerViewFlor.setAdapter(adaptadorFlor);
+        recyclerViewFlor.setAdapter(adaptadorFlor);*/
 
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);

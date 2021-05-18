@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.AgregarPlanta"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTituloGeneral3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/footlight_mt_light"
+                android:gravity="center"
+                android:paddingTop="12sp"
+                android:text="@string/titulo_agregar_planta"
+                android:textColor="@color/purple_200"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="45sp"
+                android:paddingRight="45sp"
+                android:src="@drawable/separador" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:orientation="horizontal"
+                android:paddingTop="20sp"
+                android:paddingRight="20sp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/footlight_mt_light"
+                    android:paddingLeft="20sp"
+                    android:text="Buscar planta"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/footlight_mt_light"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:layout_weight="1">
+
+                </TableRow>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/footlight_mt_light"
+                android:gravity="center"
+                android:paddingVertical="15sp"
+                android:paddingTop="15sp"
+                android:text="Indica su estado actual de la planta"
+                android:textColor="@color/cafe"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="30sp">
+
+                            <RadioButton
+                                android:id="@+id/radioButton3"
+                                android:layout_width="173dp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/footlight_mt_light"
+                                android:text="Brotando"
+                                android:textColor="@color/cafe"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/brotando" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="30sp">
+
+                            <RadioButton
+                                android:id="@+id/radioButton4"
+                                android:layout_width="173dp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/footlight_mt_light"
+                                android:text="En Crecimiento"
+                                android:textColor="@color/cafe"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/en_crecimiento" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="30sp">
+
+                            <RadioButton
+                                android:id="@+id/radioButton5"
+                                android:layout_width="173dp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/footlight_mt_light"
+                                android:text="Floreando"
+                                android:textColor="@color/cafe"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/floreciendo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="30sp">
+
+                            <RadioButton
+                                android:id="@+id/radioButton6"
+                                android:layout_width="173dp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/footlight_mt_light"
+                                android:text="Necesita Atención"
+                                android:textColor="@color/rojo"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/necesita_atencion" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="40sp"
+                android:paddingRight="40sp"
+                android:paddingVertical="70sp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/footlight_mt_light"
+                    android:text="Guardar planta"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

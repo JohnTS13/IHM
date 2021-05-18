@@ -16,6 +16,7 @@ public class PagerController extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
+
         switch (position){
             case 0:
                 return new Generales();
@@ -23,6 +24,8 @@ public class PagerController extends FragmentPagerAdapter {
                 return  new Plantas();
             case 2:
                 return  new Configuraciones();
+            case 3:
+                return  new AgregarPlanta();
             default:
                 return null;
         }

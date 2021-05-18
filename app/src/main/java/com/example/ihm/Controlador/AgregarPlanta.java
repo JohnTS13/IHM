@@ -3,21 +3,19 @@ package com.example.ihm.Controlador;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.ihm.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Plantas#newInstance} factory method to
+ * Use the {@link AgregarPlanta#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Plantas extends Fragment {
+public class AgregarPlanta extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,9 +26,7 @@ public class Plantas extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private PagerController pagerAdapter;
-    private Button agregarPlanta;
-    public Plantas() {
+    public AgregarPlanta() {
         // Required empty public constructor
     }
 
@@ -40,11 +36,11 @@ public class Plantas extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Plantas.
+     * @return A new instance of fragment AgregarPlanta.
      */
     // TODO: Rename and change types and number of parameters
-    public static Plantas newInstance(String param1, String param2) {
-        Plantas fragment = new Plantas();
+    public static AgregarPlanta newInstance(String param1, String param2) {
+        AgregarPlanta fragment = new AgregarPlanta();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,19 +61,6 @@ public class Plantas extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_plantas, container, false);
-        agregarPlanta = v.findViewById(R.id.button_agregar_planta);
-
-        agregarPlanta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AgregarPlanta agregarPlanta =  new AgregarPlanta();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.body_plantas, agregarPlanta);
-                transaction.commit();
-
-            }
-        });
-        return v;
+        return inflater.inflate(R.layout.fragment_agregar_planta, container, false);
     }
 }

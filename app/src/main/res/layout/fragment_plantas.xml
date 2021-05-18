@@ -3,49 +3,74 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Controlador.Plantas"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/fragment_plantas">
 
 
-    <TextView
-        android:id="@+id/txtTituloPlantas4"
+    <LinearLayout
+        android:id="@+id/body_plantas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTituloPlantas4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/footlight_mt_light"
+            android:gravity="center"
+            android:paddingTop="12sp"
+            android:text="Plantas"
+            android:textColor="@color/purple_200"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="45sp"
+            android:paddingRight="45sp"
+            android:src="@drawable/separador" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="12sp"
-        android:text="Plantas"
-        android:textColor="@color/purple_200"
-        android:textSize="40sp" />
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="45sp"
-        android:paddingRight="45sp"
-        android:src="@drawable/separador" />
+        <Button
+            android:id="@+id/button_agregar_planta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="45sp"
+            android:fontFamily="@font/footlight_mt_light"
+            android:text="Agregar plantas" />
 
-    <Button
-        android:id="@+id/insert_plants"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="45sp"
-        android:paddingRight="45sp"
-        android:text="Agregar plantas" />
+    </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp">
+        android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerPlantas"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPlantas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

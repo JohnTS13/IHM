@@ -13,5 +13,6 @@
     <!-- Configuraciones -->
     <string name="titulo_configuraciones">Configuraciones</string>
     <string name="instrucciones_configuraciones">Indique las configuraciones del invernadero</string>
-
+    <!-- Agregar Plantas -->
+    <string name="titulo_agregar_planta">Agregar Planta</string>
 </resources>
