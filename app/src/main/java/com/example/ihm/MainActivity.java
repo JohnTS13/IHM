@@ -48,6 +48,28 @@ public class MainActivity extends AppCompatActivity {
         DatabaseHelper db = new DatabaseHelper(getApplicationContext());
         adaptadorFlor = new RecyclerviewAdaptador(db.mostrarFlor());
         recyclerViewFlor.setAdapter(adaptadorFlor);
+        db.agregaFlor(1,"Margarita","17", "29", "Asteráceas", "Plantae","Brotando","1");
+        db.agregaFlor(2,"Rosa","26", "34", "Rosaceae", "Plantae","En crecimiento","1");
+        db.agregaFlor(3,"Hortensia","21", "39", "Hydrangeaceae", "Plantae","Floreciendo","1");
+        db.agregaFlor(4,"Corazón sangrante","23", "37", "Papaveraceae", "Plantae","Necesita atención","1");
+        db.agregaFlor(5,"Orquídeas","21", "30", "Orchidaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(6,"Tulipán","25", "37", "Liliaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(7,"Peonía","27", "40", "Paeoniaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(8,"Freesia","24", "35", "Iridaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(9,"Nardo","26", "36", "Asparagaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(10,"Dalia","25", "34", "Asteraceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(11,"Crisantemo","21", "32", "Asteraceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(12,"Clavel","27", "40", "Caryophyllaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(13,"Campanilla","21", "30", "Campanulaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(14,"Gardenia","25", "34", "Rubiaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(15,"Girasol","17", "29", "Asteraceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(16,"Narcisos","27", "40", "Amaryllidaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(17,"Flor de Cempasúchil","17", "29", "Asteraceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(18,"Amapola","23", "36", "Papaveraceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(19,"Magnolia","17", "29", "Magnoliaceae", "Plantae","En crecimiento","0");
+        db.agregaFlor(20,"Malva sylvestris","25", "34", "Malvaceae", "Plantae","En crecimiento","0");
+
+
 
         //variables de los campos para la base de datos
         /*id_flor = findViewById(R.id.id_flor);

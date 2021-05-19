@@ -54,15 +54,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursos;
     }
 
-    public void onInsertFlor(String id_flor){
+    public void onInsertFlor(int id_flor){
         SQLiteDatabase db = this.getWritableDatabase();
         if (db != null){
-            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', habilitador=1");
+            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', habilitador='1'");
             db.close();
         }
 
     }
-    public void onUpdateEstado(String id_flor, String estado){
+    public void onUpdateEstado(int id_flor, String estado){
         SQLiteDatabase db = getWritableDatabase();
         if (db != null){
             db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', estado='"+ estado +"'");
@@ -71,7 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public void onUpdateGeneral(String id_general, String temperatura, String humedad){
+    public void onUpdateGeneral(int id_general, String temperatura, String humedad){
         SQLiteDatabase db = getWritableDatabase();
         if (db != null){
             db.execSQL("UPDATE general SET id_general='"+ id_general + "', temperatura='"+ temperatura +"', humedad='"+ humedad +"'");
@@ -79,12 +79,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    public void onDeleteFlor(String id_flor){
+    public void onDeleteFlor(int id_flor){
         SQLiteDatabase db = getWritableDatabase();
         if (db != null){
-            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', habilitador=0");
+            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', habilitador='0'");
             db.close();
         }
     }
 
+    public void agregaFlor(int id_flor, String nombre, String temperatura, String humedad, String familia, String reino, String estado, String habilitador){
+        SQLiteDatabase db = getWritableDatabase();
+        if (db != null){
+            db.execSQL("INSERT INTO flor VALUES ("+id_flor+",'"+nombre+"','"+temperatura+"','"+familia+"','"+reino+"','"+estado+"','"+habilitador+"'");
+            db.close();
+        }
+    }
 }
