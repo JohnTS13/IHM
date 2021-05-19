@@ -1,7 +1,6 @@
 package com.example.ihm;
 
 import android.os.Bundle;
-import android.widget.Button;
 
 import com.example.ihm.Controlador.PagerController;
 import com.google.android.material.tabs.TabItem;
@@ -22,22 +21,17 @@ public class MainActivity extends AppCompatActivity {
     private TabItem tab1, tab2, tab3;
     private PagerController pagerAdapter;
 
-    private Button insert, update, delete, view;
-
     //prueba de despliegue
     private RecyclerView recyclerViewFlor;
     private RecyclerviewAdaptador adaptadorFlor;
+
     //hola
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //prueba de despliegue
-        /*recyclerViewFlor = (RecyclerView)findViewById(R.id.recyclerPlantas);
-        recyclerViewFlor.setLayoutManager(new LinearLayoutManager(this));
-        adaptadorFlor = new RecyclerviewAdaptador(obtenerFlor());
-        recyclerViewFlor.setAdapter(adaptadorFlor);*/
+
 
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
@@ -45,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         tab1 = findViewById(R.id.tabGeneral);
         tab2 = findViewById(R.id.tabPlantas);
         tab3 = findViewById(R.id.tabConfiguraciones);
+
+
+
+        /*muestra plantas
+        /*recyclerViewFlor = (RecyclerView)findViewById(R.id.recyclerPlantas);
+        recyclerViewFlor.setLayoutManager(new LinearLayoutManager(this));*/
+        DatabaseHelper db = new DatabaseHelper(getApplicationContext());
+        adaptadorFlor = new RecyclerviewAdaptador(db.mostrarFlor());
+        recyclerViewFlor.setAdapter(adaptadorFlor);
 
         //variables de los campos para la base de datos
         /*id_flor = findViewById(R.id.id_flor);
@@ -58,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
         /*insert = findViewById(R.id.);
         update = findViewById(R.id.);
         delete = findViewById(R.id.);
-        view = findViewById(R.id.);
+        view = findViewById(R.id.);*/
 
-        DatabaseHelper db = new DatabaseHelper(this,"chavas_garden", null,1);
-        */
+
+
         pagerAdapter = new PagerController(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -94,10 +97,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public List<flor_planta> obtenerFlor() {
+    /*public List<flor_planta> obtenerFlor() {
         List<flor_planta> flor_array = new ArrayList<>();
         flor_array.add(new flor_planta("Margarita", "17°", "29", "Asteráceas", "Plantae", "Brotando", R.drawable.brotando));
         flor_array.add(new flor_planta("Rosa polyantha", "26°", "34", "Rosaceae", "Plantae", "En crecimiento", R.drawable.en_crecimiento));
+
         return  flor_array;
-    }
+    }*/
 }

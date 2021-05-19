@@ -6,16 +6,20 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/*public class DatabaseHelper extends SQLiteOpenHelper {
+import java.util.ArrayList;
+import java.util.List;
+
+public class DatabaseHelper extends SQLiteOpenHelper {
     //Initialize Variable
     private static final String DATABASE_NAME = "chavas_garden";
+    private static final int VERSION_DB = 1;
     private static final String TABLE1 = "flor";
     private static final String TABLE2 = "general";
 
 
 
-    public DatabaseHelper(Context context, String DATABASE_NAME, SQLiteDatabase.CursorFactory factory, int version ){
-        super(context, DATABASE_NAME, factory, version);
+    public DatabaseHelper(Context context){
+        super(context, DATABASE_NAME, null, VERSION_DB);
     }
 
     @Override
@@ -36,70 +40,51 @@ import android.database.sqlite.SQLiteOpenHelper;
         onCreate(db);
     }
 
-    public Boolean onUpdateFlor(String id_flor, String estado, String habilitador){
+    //mostrar datos
+    public List<flor_planta> mostrarFlor(){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE1+" WHERE habilitador=1", null);
+        List<flor_planta> cursos = new ArrayList<>();
+        if (cursor.moveToFirst()){
+            do{
+                cursos.add(new flor_planta(cursor.getString(0), cursor.getString(1), cursor.getString(3),
+                        cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getInt(7)));
+            }while (cursor.moveToNext());
+        }
+        return cursos;
+    }
+
+    public void onInsertFlor(String id_flor){
         SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        int flor = Integer.parseInt(id_flor);
-        contentValues.put("estado", estado);
-        contentValues.put("habilitador", habilitador);
-        contentValues.put("id_flor", flor);
-        Cursor cursor = db.rawQuery(sql;: "SELECT * FROM flor WHERE id_flor=?", new String[] {flor});
-        if (cursor.getCount()>0) {
-            long resultado = db.update(table:"flor", nullColumnHack:null, contentValues);
-            if (resultado == -1) {
-                return false;
-            } else {
-                return true;
-            }
-        }else {
-            return  false;
+        if (db != null){
+            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', habilitador=1");
+            db.close();
+        }
+
+    }
+    public void onUpdateEstado(String id_flor, String estado){
+        SQLiteDatabase db = getWritableDatabase();
+        if (db != null){
+            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', estado='"+ estado +"'");
+            db.close();
         }
 
     }
 
-    public Boolean onUpdateGeneral(String id_general, String temperatura, String humedad){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        int id_gen = Integer.parseInt(id_general);
-        contentValues.put("temperatura", temperatura);
-        contentValues.put("humedad", humedad);
-        contentValues.put("id_general", id_gen);
-        Cursor cursor = db.rawQuery(sql: "SELECT * FROM general WHERE id_general= ?", new String[] {id_gen});
-        if (cursor.getCount()>0) {
-            long resultado = db.update(table:"general", nullColumnHack:null, contentValues);
-
-            if (resultado == -1) {
-                return false;
-            } else {
-                return true;
-            }
-        }else {
-            return false;
+    public void onUpdateGeneral(String id_general, String temperatura, String humedad){
+        SQLiteDatabase db = getWritableDatabase();
+        if (db != null){
+            db.execSQL("UPDATE general SET id_general='"+ id_general + "', temperatura='"+ temperatura +"', humedad='"+ humedad +"'");
+            db.close();
         }
     }
-    /*public Boolean onDeleteFlor(String id_flor){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        int flor = Integer.parseInt(id_flor);
-        String[] args = new String[]{"0"};
-        Cursor cursor = db.rawQuery(sql: "SELECT * FROM flor WHERE id_flor= ?", new String[] {flor});
-        if (cursor.getCount()>0) {
-            long resultado = db.update("flor", "habilitador", args);
 
-            if (resultado == -1) {
-                return false;
-            } else {
-                return true;
-            }
-        }else {
-            return false;
+    public void onDeleteFlor(String id_flor){
+        SQLiteDatabase db = getWritableDatabase();
+        if (db != null){
+            db.execSQL("UPDATE flor SET id_flor='"+ id_flor + "', habilitador=0");
+            db.close();
         }
-    }*/
-
-/*    public Cursor getData(){
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM flor", null);
-        return  cursor;
     }
+
 }
-*/

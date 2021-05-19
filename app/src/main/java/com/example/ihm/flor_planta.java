@@ -4,8 +4,6 @@ public class flor_planta {
     private String nombre, temperatura, humedad, familia, reino, estado;
     private int imgEstado;
 
-    public flor_planta() {
-    }
 
     public flor_planta(String nombre, String temperatura, String humedad, String familia, String reino, String estado, int imgEstado) {
         this.nombre = nombre;
