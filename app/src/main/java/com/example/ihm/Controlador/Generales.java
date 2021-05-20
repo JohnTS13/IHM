@@ -3,10 +3,16 @@ package com.example.ihm.Controlador;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.ihm.R;
 
@@ -26,6 +32,9 @@ public class Generales extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private Button buscar;
+    private ImageButton conectar1, conectar2;
+    LinearLayout dispositivos;
     public Generales() {
         // Required empty public constructor
     }
@@ -61,6 +70,59 @@ public class Generales extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_general, container, false);
+        View view = inflater.inflate(R.layout.fragment_general, container, false);
+
+
+        buscar = view.findViewById(R.id.buscarDipositivo);
+        conectar1 = view.findViewById(R.id.sincromizacion1);
+        conectar2 = view.findViewById(R.id.sincromizacion2);
+        dispositivos = view.findViewById(R.id.dispositivos);
+
+        buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getContext(), "Buscando dispositivos", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+                dispositivos.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        conectar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getContext(), "Conectado", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+                dispositivos.setVisibility(View.INVISIBLE);
+
+            }
+        });
+
+        conectar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getContext(), "No se pudo conectar", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+                dispositivos.setVisibility(View.INVISIBLE);
+
+            }
+        });
+
+        buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getContext(), "Buscando dispositivos", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+                dispositivos.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+
+        return view;
     }
 }

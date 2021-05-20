@@ -4,9 +4,13 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.ihm.R;
 
@@ -25,7 +29,8 @@ public class Configuraciones extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private EditText temp, hum;
+    private Button guardarConfiguraciones;
     public Configuraciones() {
         // Required empty public constructor
     }
@@ -61,6 +66,26 @@ public class Configuraciones extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_configuraciones, container, false);
+        View view = inflater.inflate(R.layout.fragment_configuraciones, container, false);
+
+        guardarConfiguraciones = view.findViewById(R.id.guardarConfiguraciones);
+
+        temp = view.findViewById(R.id.editTextHumedad);
+        hum = view.findViewById(R.id.editTextTemperatura);
+
+        guardarConfiguraciones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getContext(), "Configuraciones guardadas", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+
+                temp.setText("");
+                hum.setText("");
+            }
+        });
+
+
+        return view;
     }
 }

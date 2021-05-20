@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         /*muestra plantas
         /*recyclerViewFlor = (RecyclerView)findViewById(R.id.recyclerPlantas);
         recyclerViewFlor.setLayoutManager(new LinearLayoutManager(this));*/
-        DatabaseHelper db = new DatabaseHelper(getApplicationContext());
+/*        DatabaseHelper db = new DatabaseHelper(getApplicationContext());
         adaptadorFlor = new RecyclerviewAdaptador(db.mostrarFlor());
         recyclerViewFlor.setAdapter(adaptadorFlor);
         db.agregaFlor(1,"Margarita","17", "29", "Asteráceas", "Plantae","Brotando","1");
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         db.agregaFlor(19,"Magnolia","17", "29", "Magnoliaceae", "Plantae","En crecimiento","0");
         db.agregaFlor(20,"Malva sylvestris","25", "34", "Malvaceae", "Plantae","En crecimiento","0");
 
-
+*/
 
         //variables de los campos para la base de datos
         /*id_flor = findViewById(R.id.id_flor);

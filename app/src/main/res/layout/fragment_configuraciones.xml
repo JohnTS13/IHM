@@ -58,7 +58,7 @@
             android:fontFamily="@font/footlight_mt_light"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextTemperatura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -86,7 +86,7 @@
             android:fontFamily="@font/footlight_mt_light"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTextHumedad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -106,12 +106,13 @@
         android:paddingRight="50sp">
 
         <Button
-            android:id="@+id/insert_plants"
+            android:id="@+id/guardarConfiguraciones"
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:fontFamily="@font/footlight_mt_light"
-            android:text="Guardar configuración" />
+            android:text="Guardar configuración"
+            />
     </LinearLayout>
 
     <ImageView
