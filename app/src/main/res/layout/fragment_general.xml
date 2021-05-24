@@ -138,7 +138,7 @@
 
                 android:fontFamily="@font/footlight_mt_light"
                 android:paddingVertical="50sp"
-                android:text="Arduino0545 &#xA; 98:03:31:FD:1C:25"
+                android:text="HC - 06 &#xA; 98:03:31:FD:1C:25"
                 android:textColor="@color/cafe"
                 android:textSize="20sp" />
 
