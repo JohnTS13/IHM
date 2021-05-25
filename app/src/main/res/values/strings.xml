@@ -10,6 +10,10 @@
     <string name="general_Temperatura">Temperatura</string>
     <string name="general_Humedad">Humedad</string>
     <string name="estado_planta">Dispositivos Bluetooth</string>
+    <!-- Estado Planta -->
+    <string name="titulo_estado">Estado de la Planta</string>
+    <string name="unidad_Temperatura">°C</string>
+    <string name="unidad_Humedad">g/m3</string>
     <!-- Configuraciones -->
     <string name="titulo_configuraciones">Configuraciones</string>
     <string name="instrucciones_configuraciones">Indique las configuraciones del invernadero</string>

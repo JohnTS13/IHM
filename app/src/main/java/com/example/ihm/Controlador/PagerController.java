@@ -23,9 +23,9 @@ public class PagerController extends FragmentPagerAdapter {
             case 1:
                 return  new Plantas();
             case 2:
-                return  new Configuraciones();
+                return  new EstadoPlanta();
             case 3:
-                return  new AgregarPlanta();
+                return  new Configuraciones();
             default:
                 return null;
         }

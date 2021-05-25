@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.Configuraciones"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtTituloGeneral4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="12sp"
+        android:text="@string/titulo_estado"
+        android:textColor="@color/purple_200"
+        android:textSize="40sp"
+        android:fontFamily="@font/footlight_mt_light"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45sp"
+        android:paddingRight="45sp"
+        android:src="@drawable/separador" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/general_Temperatura"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:textSize="19sp"
+            android:fontFamily="@font/footlight_mt_light"/>
+
+        <EditText
+            android:id="@+id/editTextTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="18sp"
+            android:fontFamily="@font/footlight_mt_light"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unidad_Temperatura"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:textSize="19sp"
+            android:fontFamily="@font/footlight_mt_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/general_Humedad"
+            android:paddingLeft="67sp"
+            android:textSize="19sp"
+            android:paddingRight="40sp"
+            android:fontFamily="@font/footlight_mt_light"/>
+
+        <EditText
+            android:id="@+id/editTextHumedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:fontFamily="@font/footlight_mt_light"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unidad_Humedad"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:textSize="19sp"
+            android:fontFamily="@font/footlight_mt_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="90sp"
+        android:paddingRight="50sp">
+
+        <Button
+            android:id="@+id/actualizarParametro"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/footlight_mt_light"
+            android:text="Actualizar Parámetros"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/imagen_configuraciones" />
+
+</LinearLayout>

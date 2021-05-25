@@ -18,7 +18,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private TabItem tab1, tab2, tab3;
+    private TabItem tab1, tab2, tab3, tab4;
     private PagerController pagerAdapter;
 
     //prueba de despliegue
@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         tab1 = findViewById(R.id.tabGeneral);
         tab2 = findViewById(R.id.tabPlantas);
-        tab3 = findViewById(R.id.tabConfiguraciones);
+        tab3 = findViewById(R.id.tabEstadoPlantas);
+        tab4 = findViewById(R.id.tabConfiguraciones);
 
 
 
@@ -102,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
                 if (tab.getPosition() == 2) {
                     pagerAdapter.notifyDataSetChanged();
                 }
+                if (tab.getPosition() == 3) {
+                    pagerAdapter.notifyDataSetChanged();
+                }
+
             }
 
             @Override
