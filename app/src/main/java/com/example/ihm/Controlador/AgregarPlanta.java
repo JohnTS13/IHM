@@ -124,7 +124,7 @@ public class AgregarPlanta extends Fragment {
                 listaUsuarios.add(new PlantaConstructor("17","Flor de Cempasúchil","17","29","Asteraceae","Plantae","En crecimiento","0"));
                 listaUsuarios.add(new PlantaConstructor("18","Amapola","23","36","Papaveraceae","Plantae","En crecimiento","0"));
                 listaUsuarios.add(new PlantaConstructor("19","Magnolia","17","29","Magnoliaceae","Plantae","En crecimiento","0"));
-                listaUsuarios.add(new PlantaConstructor("20","Malva sylvestris","25","34","Malvaceae","Plantae","En crecimiento","0"));
+                //listaUsuarios.add(new PlantaConstructor("20","Malva sylvestris","25","34","Malvaceae","Plantae","En crecimiento","0"));
 
                 TableRow.LayoutParams layoutFila = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
                 TableRow.LayoutParams layoutUsuario = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
