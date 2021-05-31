@@ -73,8 +73,8 @@ public class EstadoPlanta extends Fragment {
         temp = view.findViewById(R.id.editTextTemperaturaE);
         hum = view.findViewById(R.id.editTextHumedadE);
 
-        temp.setText("20.5");
-        hum.setText("50.12");
+        temp.setText("30.70");
+        hum.setText("41.00");
 
         actualizarParametro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,8 +84,8 @@ public class EstadoPlanta extends Fragment {
                 toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
                 toast.show();
 
-                temp.setText("21.5");
-                hum.setText("45.5");
+                /*temp.setText("30.70");
+                hum.setText("41.00");*/
 
                 /*cont = cont +1;
                 if(cont>=1){
