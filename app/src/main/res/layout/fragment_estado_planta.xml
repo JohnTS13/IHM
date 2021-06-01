@@ -104,11 +104,15 @@
             android:paddingRight="40sp"
             android:textSize="17sp"
             android:fontFamily="@font/footlight_mt_light"/>
+
+
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="181dp"
+        android:layout_height="62dp"
         android:layout_weight="1"
         android:orientation="vertical"
         android:paddingLeft="90sp"
@@ -117,17 +121,418 @@
         <Button
             android:id="@+id/actualizarParametro"
 
-            android:layout_width="wrap_content"
-            android:layout_height="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:fontFamily="@font/footlight_mt_light"
             android:text="Actualizar Parámetros" />
+
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView7"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/imagen_tyh" />
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ug7rrede"
+                            android:layout_width="125dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/brotando"
+                            tools:src="@drawable/en_crecimiento" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gd4v"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="En crecimiento"
+                                android:textColor="#4CAF50"
+                                android:textColorHint="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/ydydc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Planta araña"
+                                android:textColorHint="#000000" />
+
+                            <TextView
+                                android:id="@+id/rdf5e"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="T: 26°          H: +-34" />
+
+                            <TextView
+                                android:id="@+id/refrr34er"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Familia: Rosaceae " />
+
+                            <TextView
+                                android:id="@+id/ececfreffcfe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reino: Plantae" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ug7redee"
+                            android:layout_width="125dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/brotando"
+                            tools:src="@drawable/en_crecimiento" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="En crecimiento"
+                                android:textColor="#4CAF50"
+                                android:textColorHint="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Calathea Triostar"
+                                android:textColorHint="#000000" />
+
+                            <TextView
+                                android:id="@+id/rfe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="T: 17°          H:+- 29" />
+
+                            <TextView
+                                android:id="@+id/refrrer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Familia: Asteráceas" />
+
+                            <TextView
+                                android:id="@+id/erferfcecfeffcfe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reino: Plantae" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ug7rgredee"
+                            android:layout_width="125dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/brotando"
+                            tools:src="@drawable/brotando" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yyfeedc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Brotando"
+                                android:textColor="#4CAF50"
+                                android:textColorHint="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/yyfedc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Crisantemo"
+                                android:textColorHint="#000000" />
+
+                            <TextView
+                                android:id="@+id/rf5gere"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="T: 21°          H: +-37" />
+
+                            <TextView
+                                android:id="@+id/refrert34er"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Familia: Rosaceae " />
+
+                            <TextView
+                                android:id="@+id/ececrffeffcfe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reino: Plantae" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ug7rrdredee"
+                            android:layout_width="125dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/brotando"
+                            tools:src="@drawable/floreciendo" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gio4v"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Floreciendo"
+                                android:textColor="#4CAF50"
+                                android:textColorHint="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/yyduikc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Planta araña"
+                                android:textColorHint="#000000" />
+
+                            <TextView
+                                android:id="@+id/rfuik5e"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="T: 26°          H: +-34" />
+
+                            <TextView
+                                android:id="@+id/ri7ukjut34er"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Familia: Rosaceae " />
+
+                            <TextView
+                                android:id="@+id/ikffcfe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reino: Plantae" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ug7rrredee"
+                            android:layout_width="125dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/brotando"
+                            tools:src="@drawable/brotando" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/g4v"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Brotando"
+                                android:textColor="#4CAF50"
+                                android:textColorHint="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/yydc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Magnolia "
+                                android:textColorHint="#000000" />
+
+                            <TextView
+                                android:id="@+id/rf5e"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="T: 17°          H: +-29" />
+
+                            <TextView
+                                android:id="@+id/refrrt34er"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Familia: Magnoliaceae " />
+
+                            <TextView
+                                android:id="@+id/ececfeffcfe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reino: Plantae" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
